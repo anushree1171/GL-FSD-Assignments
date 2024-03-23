@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+.container{
+    height:400px;
+    width:80%;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+
+    overflow-x: hidden;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container2{
+    position: absolute;
+    top:90%;
+    left:45%;
+}
+
+.form{
+    flex:1;
+    margin:20px;
+    padding:10px;
+}
+
+.form:last-child{
+    margin-bottom: 20px;
+}
+
+.contact-details-input, .address-input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-details-input *, .address-input *, #address, .test-type *, .report *, .date-and-time *{
+    margin:5px;
+}
+
+input[type=text], input[type=email]{
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+p{
+    font-size: large;
+    font-weight: 500;
+    margin:0; padding:0;
+}
+
+.contact-details, .address, .test-type, .report, .date-and-time{
+    border: 1px dotted black;
+    margin: 10px 0 10px 0;
+}
+
+.address #address{
+    padding:10px;
+}
+
+.test-type-input, .date-and-time-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.date-and-time-input{
+    width:40%;
+}
+
+.address select option{
+    background-color: white;
+    padding: auto;
+    border-bottom: 2px solid black;
+}
+
+.container2 input{
+    padding:10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.fixed-image{
+    position: relative;
+    top:0;
+    right:0;
+
+    height: 100%;
+    width:50%;
+
+    object-fit: contain;
+}
+
+
+
+
+
+
+

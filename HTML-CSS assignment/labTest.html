@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab test</title>
+    <link rel="stylesheet" href="labTest.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="form col-md-6">
+            <div class="contact-details">
+                <label for="contact-details"><p>1. Your contact details</p></label>
+                <div class="contact-details-input">
+                    <input type="text" id="contact-details full-name" placeholder="Full name">
+                    <input type="text" id="contact-details patient-id" placeholder="Patient ID if exists">
+                    <input type="text" id="contact-details contact-no" placeholder="Contact number" size="10">
+                    <input type="email" id="contact-details email-d" placeholder="Email id">
+                </div>
+            </div>
+
+            <div class="address">
+                <label for="address"><p>2. Address</p></label>
+                <div class="address-input">
+                    <input type="text" id="address house-no" placeholder="House number">
+                    <input type="text" id="address street" placeholder="Street">
+                    <input type="text" id="address area" placeholder="Area">
+                </div>
+                <br>
+                <select name="district" id="address district">
+                    <option value="">Choose your district</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="davangere">Davangere</option>
+                    <option value="bagalkote">Bagalkote</option>
+                    <option value="bidadi">Bidadi</option>
+                    <option value="mysuru">Mysuru</option>
+                </select>
+            </div>
+
+            <div class="test-type">
+                <label for="testType"><p>3. Choose test type</p></label>
+                <p>&lpar;Choose one test without fail&rpar;</p>
+                <div class="test-type-input">
+                    <div class="ip">
+                        <input type="checkbox" name="CBC" id="testType">
+                        <label>CBC</label>
+                    </div>
+                    <div class="ip">
+                        <input type="checkbox" name="Urine profile" id="testType">
+                        <label>Urine profile</label>
+                    </div>
+                    <div class="ip">
+                        <input type="checkbox" name="Lipid profile" id="testType">
+                        <label>Lipid profile</label>
+                    </div>
+                    <div class="ip">
+                        <input type="checkbox" name="Vitamin tests" id="testType">
+                        <label>Vitamin tests</label>
+                    </div>
+                    <div class="ip">
+                        <input type="checkbox" name="Glucose levels" id="testType">
+                        <label>Glucose levels</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report">
+                <label for="report"><p>4. Do you want a hard copy of the report?</p></label>
+                <br>
+                <div class="report-input">
+                    <input type="radio" name="report" id="report" value="Yes">
+                    <label for="">Yes</label>
+                    <input type="radio" name="report" id="report" value="No">
+                    <label for="">No</label>
+                </div>
+            </div>
+
+            <div class="date-and-time">
+                <label for=""><p>5. Select a comfortable date and time</p></label>
+                <br>
+                <div class="date-and-time-input">
+                    <input type="date" required>
+                    <input type="time" required>
+                </div>
+            </div>
+
+        </div>
+        <div class="fixed-image">
+            <img src="Problem Statement\Images\Lab-Test\lab-test.jpg" alt="">
+        </div>
+    </div>
+    <div class="container2">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </div>
+</body>
+</html>
