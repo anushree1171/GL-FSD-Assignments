@@ -1,1 +1,1 @@
-Assigments from my Full stack development course at Great Learning Career Academy
+Assigments from my Full Stack Development course at Great Learning Career Academy.
